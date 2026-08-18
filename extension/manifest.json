@@ -7,7 +7,7 @@
 
     "content_scripts": [
         {
-            "matches": ["https://battlelog.battlefield.com/*"],
+            "matches": ["https://battlelog.battlefield.com/*", "http://battlelog.battlefield.com/*"],
             "js": ["injectWebsocketOverride.js", "relayMessages.js"],
             "run_at": "document_idle"
         }
